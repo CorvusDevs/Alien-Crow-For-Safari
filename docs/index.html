@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alien Crow For Safari — old.reddit.com Enhancement</title>
+    <meta name="description" content="Alien Crow is a Safari extension that supercharges the classic old.reddit.com interface with 70+ customizable modules: dark themes, ad blocker, comment tools, saved-content manager, and more. Localized in 33 languages.">
+    <link rel="icon" href="icon-128.png" type="image/png">
+    <style>
+        :root {
+            color-scheme: light dark;
+            --bg: #ffffff;
+            --bg-secondary: #f7f7f8;
+            --text: #1a1a1b;
+            --text-secondary: #555;
+            --accent: #1f6feb;
+            --accent-hover: #155cc4;
+            --border: #e5e5e5;
+            --card-bg: #ffffff;
+            --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.06);
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1a1a1b;
+                --bg-secondary: #272729;
+                --text: #d7dadc;
+                --text-secondary: #999;
+                --border: #343536;
+                --card-bg: #272729;
+                --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 16px rgba(0,0,0,0.5);
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container { max-width: 880px; margin: 0 auto; padding: 48px 24px 80px; }
+        .hero { text-align: center; margin-bottom: 48px; }
+        .hero img { width: 96px; height: 96px; }
+        h1 { font-size: 40px; font-weight: 800; margin: 16px 0 4px; }
+        .subtitle { color: var(--text-secondary); font-size: 17px; margin: 0 0 24px; }
+        .cta {
+            display: inline-block; padding: 12px 24px; border-radius: 8px;
+            background: var(--accent); color: #fff !important;
+            text-decoration: none; font-weight: 600; font-size: 15px;
+            transition: background 0.15s;
+        }
+        .cta:hover { background: var(--accent-hover); }
+        h2 {
+            font-size: 22px; font-weight: 700; margin: 40px 0 12px;
+            padding-top: 16px; border-top: 1px solid var(--border);
+        }
+        h2:first-of-type { border-top: none; padding-top: 0; }
+        p { margin: 8px 0; }
+        ul { padding-left: 22px; margin: 8px 0; }
+        li { margin: 6px 0; }
+        a { color: var(--accent); }
+        .grid {
+            display: grid; gap: 14px;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            margin-top: 16px;
+        }
+        .card {
+            background: var(--card-bg); border: 1px solid var(--border);
+            border-radius: 10px; padding: 14px 16px; box-shadow: var(--shadow);
+        }
+        .card strong { display: block; margin-bottom: 4px; font-size: 14px; }
+        .card span { color: var(--text-secondary); font-size: 13px; }
+        footer {
+            margin-top: 56px; padding-top: 16px;
+            border-top: 1px solid var(--border);
+            font-size: 13px; color: var(--text-secondary); text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <img src="icon-128.png" alt="Alien Crow icon">
+            <h1>Alien Crow For Safari</h1>
+            <p class="subtitle">A Safari extension that supercharges the classic old.reddit.com interface with 70+ modules.</p>
+            <a class="cta" href="https://apps.apple.com/app/alien-crow-for-safari/id6769216829">Get on the App Store</a>
+        </div>
+
+        <h2>What it does</h2>
+        <p>
+            Alien Crow brings back the classic browsing experience and powers
+            it up. Open any thread, and Alien Crow takes over: 20+ dark and
+            light themes, an ad &amp; annoyance blocker, comment power-ups, a
+            unified saved-content manager, deleted-comment recovery, an
+            inbox preview, enhanced search, command palette, keyboard
+            navigation, and a lot more — all designed for old.reddit.com.
+        </p>
+
+        <div class="grid">
+            <div class="card"><strong>Dark Mode &amp; 20+ Themes</strong><span>Dracula, Nord, Catppuccin, Solarized, Tokyo Night, OLED black, and more</span></div>
+            <div class="card"><strong>Ad &amp; Annoyance Blocker</strong><span>Strip promoted posts, app nags, login walls, chat widgets, NFT promos</span></div>
+            <div class="card"><strong>Comment Tools</strong><span>Auto-collapse AutoModerator, persistent collapse, jump between top-level comments</span></div>
+            <div class="card"><strong>Saved Content Manager</strong><span>Unified viewer for bookmarked posts and saved comments with search and tags</span></div>
+            <div class="card"><strong>View Deleted Content</strong><span>One click to view removed comments via Reveddit</span></div>
+            <div class="card"><strong>Enhanced Search</strong><span>Add sort, time, flair, and operator filters; click any flair to search for it</span></div>
+            <div class="card"><strong>Command Palette</strong><span>Keyboard-driven navigation across subreddits, settings, and actions</span></div>
+            <div class="card"><strong>33 Languages</strong><span>Fully localized UI with autonym dropdown picker</span></div>
+        </div>
+
+        <h2>Privacy</h2>
+        <p>
+            Alien Crow runs entirely in your browser. It does not collect,
+            transmit, or share any data. All settings are stored on your
+            device. <a href="privacy.html">Read the full privacy policy</a>.
+        </p>
+
+        <h2>Open source</h2>
+        <p>
+            Source code, bug reports, and feature requests live on
+            <a href="https://github.com/CorvusDevs/Alien-Crow-For-Safari">GitHub</a>.
+        </p>
+
+        <h2>About</h2>
+        <p>
+            Alien Crow is an independent project. It is not affiliated with,
+            endorsed by, or sponsored by Reddit Inc. The "Reddit" name is
+            used here descriptively to identify the platform this extension
+            enhances.
+        </p>
+
+        <footer>
+            Alien Crow For Safari is developed by
+            <a href="https://github.com/CorvusDevs">Corvus Devs</a>.
+        </footer>
+    </div>
+</body>
+</html>

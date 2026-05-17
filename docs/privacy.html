@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alien Crow For Safari — Privacy Policy</title>
+    <meta name="description" content="Privacy policy for Alien Crow For Safari, the old.reddit.com enhancement extension.">
+    <style>
+        :root {
+            color-scheme: light dark;
+            --bg: #ffffff;
+            --text: #1a1a1b;
+            --text-secondary: #555;
+            --accent: #4a90d9;
+            --border: #e5e5e5;
+            --code-bg: #f6f7f8;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1a1a1b;
+                --text: #d7dadc;
+                --text-secondary: #999;
+                --border: #343536;
+                --code-bg: #272729;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0 0 4px;
+        }
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin: 0 0 32px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 32px 0 10px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+        h2:first-of-type { border-top: none; padding-top: 0; }
+        p { margin: 8px 0; }
+        ul { padding-left: 22px; margin: 8px 0; }
+        li { margin: 4px 0; }
+        code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+            font-size: 13px;
+            background: var(--code-bg);
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        a { color: var(--accent); }
+        .tldr {
+            background: var(--code-bg);
+            border-left: 3px solid var(--accent);
+            padding: 14px 18px;
+            border-radius: 6px;
+            margin: 24px 0;
+        }
+        .tldr strong { font-weight: 700; }
+        footer {
+            margin-top: 48px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Alien Crow for Safari — Last updated 2026-05-13</p>
+
+        <div class="tldr">
+            <strong>TL;DR.</strong> Alien Crow does not collect, transmit, or
+            share any personal data. Every setting and every cached value
+            stays on your device. There is no analytics, no telemetry, no
+            account, and no server.
+        </div>
+
+        <h2>What is Alien Crow?</h2>
+        <p>
+            Alien Crow is a Safari Web Extension that enhances the Reddit
+            browsing experience with themes, ad-blocking, keyboard
+            navigation, saved-content tools, and over 70 other features. It
+            runs entirely inside your browser; the host app exists only to
+            install the extension into Safari.
+        </p>
+
+        <h2>What data Alien Crow collects</h2>
+        <p>
+            <strong>None that ever leaves your device.</strong> Alien Crow
+            stores the following on your device using Safari's local
+            extension storage:
+        </p>
+        <ul>
+            <li><strong>Module preferences</strong> — which features you have
+                enabled and any options you have customized (e.g. theme
+                choice, keyboard shortcuts).</li>
+            <li><strong>Per-thread state</strong> — counts of comments you
+                have seen so the "new comments" badge works (kept up to 30
+                days, then pruned).</li>
+            <li><strong>User tags &amp; bookmarks</strong> — only if you
+                actively use the User Tagger or Post Bookmarks modules.</li>
+            <li><strong>UI state</strong> — your selected display language,
+                whether the welcome toast has been shown, whether the
+                review prompt has been dismissed.</li>
+        </ul>
+        <p>
+            All of this lives in Safari's <code>browser.storage.local</code>
+            sandbox. It is never read by Alien Crow's developer, and it is
+            never sent to any server.
+        </p>
+
+        <h2>Network access</h2>
+        <p>
+            Alien Crow's content scripts only run on reddit.com pages. It
+            does not make additional network requests except in two
+            opt-in cases:
+        </p>
+        <ul>
+            <li><strong>View Deleted Content</strong> (off by default) — when
+                you click "view deleted" on a removed comment, the extension
+                opens a link to <a href="https://www.reveddit.com/">reveddit.com</a>,
+                a third-party archive of Reddit comments. Reveddit's privacy
+                practices are governed by their own privacy policy.</li>
+            <li><strong>RSS Feed</strong> (off by default) — generates RSS
+                URLs that point at Reddit's own public JSON endpoints; no
+                third-party server is involved.</li>
+        </ul>
+
+        <h2>Permissions</h2>
+        <p>
+            Safari grants Alien Crow the following permissions:
+        </p>
+        <ul>
+            <li><code>storage</code> — to save your preferences locally.</li>
+            <li><code>activeTab</code>, <code>tabs</code> — to open the
+                Reddit page when you click the toolbar icon, and to refresh
+                the page when you change settings.</li>
+            <li><code>webNavigation</code> — to redirect new Reddit URLs to
+                old.reddit.com when you've opted into "Force Old Reddit".</li>
+            <li><strong>Host access</strong> to <code>*.reddit.com</code> —
+                so the extension can modify Reddit pages.</li>
+        </ul>
+        <p>
+            Alien Crow does <strong>not</strong> request access to other
+            websites. The host-permission allowlist is literally just
+            Reddit.
+        </p>
+
+        <h2>Third-party services</h2>
+        <p>
+            Alien Crow is open source and does not embed analytics SDKs,
+            crash reporters, advertising libraries, or social-media
+            trackers. No third-party JavaScript is loaded at runtime.
+        </p>
+
+        <h2>Children's privacy</h2>
+        <p>
+            Alien Crow does not knowingly process data from children under
+            the age of 13. Since Reddit's own terms require users to be at
+            least 13, and Alien Crow only operates on Reddit, this
+            requirement is enforced upstream.
+        </p>
+
+        <h2>Changes to this policy</h2>
+        <p>
+            If this policy ever changes, the "Last updated" date at the top
+            will reflect the new revision. Material changes will also be
+            mentioned in the extension's release notes.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+            Questions, concerns, or feedback?
+            <a href="https://github.com/CorvusDevs/Alien-Crow-For-Safari/issues">Open an issue on GitHub</a>.
+        </p>
+
+        <footer>
+            Alien Crow is developed by Corvus Devs.
+            <a href="../">Back to home</a>.
+        </footer>
+    </div>
+</body>
+</html>
