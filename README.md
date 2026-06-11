@@ -4,7 +4,7 @@
 
 # Alien Crow For Safari
 
-**70+ tools that supercharge old.reddit.com and modern reddit.com**
+**90+ tools that supercharge old.reddit.com and modern reddit.com**
 
 <p>
   <img src="https://img.shields.io/badge/macOS%20%C2%B7%20iOS%20%C2%B7%20iPadOS-supported-444?style=flat-square&logo=apple&logoColor=white" alt="macOS, iOS, iPadOS">
@@ -71,7 +71,7 @@ A native **Safari Web Extension** for macOS, iOS, and iPadOS that brings back th
 - **Account switcher.** Keep several accounts on hand and switch between them in a click.
 - **Filtering and cleanup.** Hide posts by keyword, domain, or flair, strip tracking parameters, and tidy your history.
 - **Bionic reading.** Bold the first part of each word to read long threads faster.
-- **70+ optional modules.** Every feature can be enabled, disabled, and tuned from the popup or full settings page.
+- **90+ optional modules.** Every feature can be enabled, disabled, and tuned from the popup or full settings page.
 
 ## What makes Alien Crow special
 
