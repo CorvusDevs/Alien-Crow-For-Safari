@@ -87,7 +87,11 @@ A native **Safari Web Extension** for macOS, iOS, and iPadOS that brings back th
 
 📱 **Old Reddit that works on a phone.** On iPhone and iPad, Alien Crow reflows the dense classic layout into a touch-friendly one with proper tap targets, so old.reddit.com feels right on a small screen.
 
-🛡️ **Built for privacy.** Alien Crow runs entirely in your browser. It does not collect, transmit, or share any data, and every setting is stored locally on your device. No account, no server, no tracking.
+🛡️ **Built for privacy.** Alien Crow stores settings and saved data locally and includes no developer analytics service. Enabled tools can contact Reddit or open external services, as described in the privacy policy. No Alien Crow account is required.
+
+## Version 2.4 candidate
+
+Recoverable settings imports, keyboard access to dialogs and analysis, clearer partial history results, bounded live updates and cancellation, and readable theme labels. The automatic custom review card is removed; explicit Feedback and What's New remain available. Phone settings controls wrap within the panel, with accessible touch height and an in-bounds language menu. The candidate also fixes inline-video fullscreen controls, coordinates saved-data edits across tabs, preserves private collections when resetting preferences, and improves community profiles and Inbox feedback. Availability will follow App Store review.
 
 ## Built with
 
@@ -95,7 +99,7 @@ A native **Safari Web Extension** for macOS, iOS, and iPadOS that brings back th
 
 ## Privacy
 
-Alien Crow runs entirely in your browser. It does not collect, transmit, or share any data, and all settings are stored locally on your device. There is no account and no server. See the [privacy policy](https://corvusdevs.github.io/Alien-Crow-For-Safari/privacy.html) for details.
+Alien Crow stores settings and saved data locally and includes no developer analytics service. Enabled live updates, inbox tools and RSS links contact Reddit; external links and media use their respective services. No Alien Crow account is required. See the [privacy policy](https://corvusdevs.github.io/Alien-Crow-For-Safari/privacy.html) for details.
 
 Alien Crow is an independent project. It is not affiliated with, endorsed by, or sponsored by Reddit Inc. The "Reddit" name is used descriptively to identify the platform this extension enhances.
 
